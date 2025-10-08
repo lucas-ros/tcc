@@ -1,0 +1,78 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "toradex,colibri-imx7d-emmc", "fsl,imx7d";
+
+    /* Ativar o MU_A */
+    fragment@0 {
+        target = <&mu>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+
+    /* Regiões de memória reservadas */
+    fragment@1 {
+        target-path = "/";
+        __overlay__ {
+            reserved-memory {
+                compatible = "reserved-memory";
+                #address-cells = <1>;
+                #size-cells = <1>;
+                ranges;
+
+                vdev0buffer0: vdev0buffer0@90002000 {
+                    compatible = "shared-dma-pool";
+                    reg = <0x90002000 0x8000>;
+                    no-map;
+                };
+
+                vdev0vring0: vdev0vring0@90000000 {
+                    compatible = "shared-dma-pool";
+                    reg = <0x90000000 0x1000>;
+                    no-map;
+                };
+
+                vdev0vring1: vdev0vring1@90001000 {
+                    compatible = "shared-dma-pool";
+                    reg = <0x90001000 0x1000>;
+                    no-map;
+                };
+
+                cm4tcmcode: cm4tcmcode@7f8000 {
+                    compatible = "shared-dma-pool";
+                    reg = <0x7f8000 0x8000>;
+                    no-map;
+                };
+
+                cm4sramcode: cm4sramcode@900000 {
+                    compatible = "shared-dma-pool";
+                    reg = <0x900000 0x40000>;
+                    no-map;
+                };
+
+                cm4reserved: cm4reserved@8ff00000 {
+                    compatible = "shared-dma-pool";
+                    reg = <0x8ff00000 0x100000>;
+                    no-map;
+                };
+            };
+        };
+    };
+
+    /* Definição do M4 */
+    fragment@2 {
+        target-path = "/";
+        __overlay__ {
+            imx7d_cm4: imx7d-cm4 {
+                compatible = "fsl,imx7d-cm4";
+                mbox-names = "tx", "rx", "rxdb";
+                mboxes = <&mu 0 0>, <&mu 1 0>, <&mu 3 0>;
+                memory-region = <&vdev0buffer0 &vdev0vring0 &vdev0vring1
+                                 &cm4tcmcode &cm4sramcode &cm4reserved>;
+                syscon = <&src>;
+            };
+        };
+    };
+};

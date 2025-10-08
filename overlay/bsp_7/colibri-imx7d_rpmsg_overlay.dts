@@ -1,0 +1,69 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,colibri-imx7d",
+		     "toradex,colibri-imx7d-emmc",
+		     "toradex,colibri-imx7s";
+};
+
+&{/} {
+	reserved-memory {
+	   #address-cells = <0x01>;
+	   #size-cells = <0x01>;
+	   ranges;
+
+	   vdev0buffer: vdev0buffer@90002000 {
+	      compatible = "shared-dma-pool";
+	      reg = <0x90002000 0x8000>;
+	      no-map;
+	   };
+
+	   vdev0vring: vdev0vring@90000000 {
+	      compatible = "shared-dma-pool";
+	      reg = <0x90000000 0x1000>;
+	      no-map;
+	   };
+
+	   vdev0vring1: vdev0vring1@90001000 {
+	      compatible = "shared-dma-pool";
+	      reg = <0x90001000 0x1000>;
+	      no-map;
+	   };
+
+	   cm4tcmcode: cm4tcmcode@7f8000 {
+	      compatible = "shared-dma-pool";
+	      reg = <0x7f8000 0x8000>;
+	      no-map;
+	   };
+
+	   cm4sramcode: cm4sramcode@900000 {
+	      compatible = "shared-dma-pool";
+	      reg = <0x900000 0x40000>;
+	      no-map;
+	   };
+
+	   cm4reserved: cm4reserved@8ff00000 {
+	      compatible = "shared-dma-pool";
+	      reg = <0x8ff00000 0x100000>;
+	      no-map;
+	   };
+	};
+
+	imx7d-cm4 {
+	   compatible = "fsl,imx7d-cm4";
+	   mbox-names = "tx", "rx", "rxdb";
+	   mboxes = <&mu0a 0x00 0x00>, <&mu0a 0x01 0x00>, <&mu0a 0x03 0x00>; 
+	   memory-region = <&vdev0buffer>, <&vdev0vring>, <&vdev0vring1>, <&cm4tcmcode>, <&cm4sramcode>, <&cm4reserved>; 
+	   syscon = <&src>;
+	   clocks = <&clks 66>;
+	};
+
+};
+
+&mu0a {
+	status = "okay";
+};
+
+
+
