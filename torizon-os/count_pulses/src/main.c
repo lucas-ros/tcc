@@ -24,46 +24,62 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    if (gpiod_line_request_falling_edge_events(gpioline, "pulse-counter") < 0) {
-        fprintf(stderr, "Failed to request falling edge events\n");
+    // ⭐ BOTH EDGES
+    if (gpiod_line_request_both_edges_events(gpioline, "pulse-counter") < 0) {
+        fprintf(stderr, "Failed to request both-edge events\n");
         gpiod_chip_close(chip);
         return 1;
     }
 
-    printf("Listening for pulses on %s...\n", gpiolineName);
+    printf("Listening for pulses (rising + falling) on %s...\n", gpiolineName);
 
     FILE *log = fopen("linux_pulses.csv", "w");
     if (!log) {
         perror("fopen");
         return 1;
     }
-    fprintf(log, "count,timestamp_sec,timestamp_nsec\n");
+    fprintf(log, "count,event_type,timestamp_sec,timestamp_nsec\n");
 
-    unsigned long count = 0;
+    unsigned long rising_count = 0;
+    unsigned long falling_count = 0;
+    unsigned long both_count = 0;
+    
     struct timespec ts;
     const struct timespec timeout = {
-        .tv_sec = 60,
+        .tv_sec = 15,
         .tv_nsec = 0
     };
 
     while (is_running) {
         struct gpiod_line_event event;
         int ret = gpiod_line_event_wait(gpioline, &timeout);
-        if (ret <= 0) continue;
+        if (ret <= 0) {
+            break;
+        }
 
         if (gpiod_line_event_read(gpioline, &event) == 0) {
-            if (event.event_type == GPIOD_LINE_EVENT_FALLING_EDGE) {
-                clock_gettime(CLOCK_MONOTONIC, &ts);
-                count++;
-                fprintf(log, "%lu,%ld,%ld\n", count, ts.tv_sec, ts.tv_nsec);
+
+            clock_gettime(CLOCK_MONOTONIC, &ts);
+
+            const char* type_str = "";
+            if (event.event_type == GPIOD_LINE_EVENT_RISING_EDGE) {
+                type_str = "rising";
+                rising_count++;
+            } else if (event.event_type == GPIOD_LINE_EVENT_FALLING_EDGE) {
+                falling_count++;
+                type_str = "falling";
             }
+
+            both_count = falling_count + rising_count;
+
+            fprintf(log, "%lu,%s,%ld,%ld\n",
+                both_count, type_str, ts.tv_sec, ts.tv_nsec);
         }
     }
 
-    printf("Total pulses counted: %lu\n", count);
+    printf("Total events counted: %lu\n", both_count);
     fclose(log);
     gpiod_line_release(gpioline);
     gpiod_chip_close(chip);
     return 0;
 }
-
