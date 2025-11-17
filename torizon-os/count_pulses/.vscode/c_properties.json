@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "gpioC",
+            "name": "count_pulses",
             "includePath": [
                 "${workspaceFolder}/includes/**",
                 "/usr/include/**"

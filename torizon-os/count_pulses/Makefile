@@ -13,7 +13,7 @@ SRC_PATH := src
 DBG_PATH := build-$(ARCH)/debug
 
 # compile macros
-TARGET_NAME := gpioC
+TARGET_NAME := count_pulses
 TARGET := $(BIN_PATH)/$(TARGET_NAME)
 TARGET_DEBUG := $(DBG_PATH)/$(TARGET_NAME)
 

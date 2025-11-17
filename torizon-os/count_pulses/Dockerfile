@@ -74,6 +74,6 @@ COPY --from=Build ${APP_ROOT}/build-${IMAGE_ARCH}/bin ${APP_ROOT}
 WORKDIR ${APP_ROOT}
 
 # Command executed in runtime when the container starts
-CMD ["./gpioC"]
+CMD ["./count_pulses"]
 
 # DEPLOY -----------------------------------------------------------------------
