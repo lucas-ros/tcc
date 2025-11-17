@@ -32,14 +32,19 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "Failed to find GPIO line: %s\n", gpiolineName_out);
         return 1;
     }
-
+    
     struct gpiod_chip* chip_out = gpiod_line_get_chip(gpioline_out);
     if (!chip_out) {
         fprintf(stderr, "Failed to get GPIO chip for line: %s\n", gpiolineName_out);
         gpiod_line_release(gpioline_out);
         return 1;
     }
-
+    
+    if (gpiod_line_request_output(gpioline_out, "pulse-output", 0) < 0) {
+        fprintf(stderr, "Failed to request output line\n");
+        return 1;
+    }
+    
     gpiod_line_set_value(gpioline_out, 1);
 
     // ⭐ BOTH EDGES
