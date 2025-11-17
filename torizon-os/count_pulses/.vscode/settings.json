@@ -1,0 +1,27 @@
+{
+  "torizon_psswd": "toradex",
+  "torizon_login": "torizon",
+  "torizon_ip": "192.168.1.113",
+  "host_ip": "192.168.1.29",
+  "torizon_workspace": "${workspaceFolder}",
+  "torizon_debug_port": "",
+  "torizon_debug_ssh_port": "2230",
+  "torizon_debug_port2": "",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "torizon_debug_port3": "",
+  "torizon_gpu": "",
+  "torizon_arch": "armv7l",
+  "wait_sync": "1",
+  "torizon_run_as": "torizon",
+  "torizon_app_root": "/home/torizon/app",
+  "tcb.packageName": "gpioC",
+  "tcb.version": "3.8.1",
+  "containers.environment": {
+    "DOCKER_HOST": "tcp://192.168.1.113:2375",
+    "DEBUG_SSH_PORT": "2230",
+    "DEBUG_PORT1": "",
+    "DEBUG_PORT2": "",
+    "DEBUG_PORT3": ""
+  },
+  "torizon_ssh_port": "22"
+}
