@@ -1,0 +1,16 @@
+/ {
+    aliases {
+        digitalinput1 = &hsc1;
+    };	
+
+	digital_input: input {
+		compatible = "gpio-keys";
+		// debounce-interval-ms = <30>;
+		polling-mode;
+		hsc1: io_b10 {
+			gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+			zephyr,code = <INPUT_KEY_0>;
+			label = "GPIO A0";
+		};
+	};
+};
