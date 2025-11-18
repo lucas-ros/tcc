@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/boards/st/nucleo_f410rb/Kconfig"
