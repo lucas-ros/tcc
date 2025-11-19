@@ -1,0 +1,176 @@
+picocom v3.1
+
+port is        : /dev/ttyACM0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : delbs,
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
+
+Type [C-a] [C-h] to see available commands
+Terminal ready
+Count rising A = 999998
+Count rising B = 0
+Count falling A = 999998
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999998
+Count rising B = 0
+Count falling A = 999998
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999998
+Count rising B = 0
+Count falling A = 999998
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999998
+Count rising B = 0
+Count falling A = 999998
+Count falling B = 0
+CPU load = 0.9%
+*** Booting Zephyr OS build v4.3.0 ***
+Pulse counter started
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 100.0%
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 0.8%
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 0.8%
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 0.8%
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 0.8%
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 0.8%
+Count rising A = 0
+Count rising B = 0
+Count falling A = 0
+Count falling B = 0
+CPU load = 0.8%
+Count rising A = 52665
+Count rising B = 0
+Count falling A = 52976
+Count falling B = 0
+CPU load = 22.6%
+Count rising A = 138457
+Count rising B = 0
+Count falling A = 138775
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 224265
+Count rising B = 0
+Count falling A = 224583
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 310073
+Count rising B = 0
+Count falling A = 310392
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 395882
+Count rising B = 0
+Count falling A = 396200
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 481689
+Count rising B = 0
+Count falling A = 482007
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 567498
+Count rising B = 0
+Count falling A = 567816
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 653306
+Count rising B = 0
+Count falling A = 653625
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 739114
+Count rising B = 0
+Count falling A = 739433
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 824923
+Count rising B = 0
+Count falling A = 825242
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 910730
+Count rising B = 0
+Count falling A = 911048
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 996539
+Count rising B = 0
+Count falling A = 996857
+Count falling B = 0
+CPU load = 35.9%
+Count rising A = 999997
+Count rising B = 0
+Count falling A = 999997
+Count falling B = 0
+CPU load = 2.0%
+Count rising A = 999997
+Count rising B = 0
+Count falling A = 999997
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999997
+Count rising B = 0
+Count falling A = 999997
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999997
+Count rising B = 0
+Count falling A = 999997
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999997
+Count rising B = 0
+Count falling A = 999997
+Count falling B = 0
+CPU load = 0.9%
+Count rising A = 999997
+Count rising B = 0
+Count falling A = 999997
+Count falling B = 0
+CPU load = 0.9%
+
+Terminating...
+Thanks for using picocom
