@@ -1,0 +1,63 @@
+picocom v3.1
+
+port is        : /dev/ttyACM0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : delbs,
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
+
+Type [C-a] [C-h] to see available commands
+Terminal ready
+pA: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901011
+CPU load = 1.5%
+A: rising=28903346, falling=28903333   B: rising=28900991, falling=28901012
+CPU load = 1.5%
+A: rising=28903397, falling=28903384   B: rising=28901042, falling=28901062
+CPU load = 1.7%
+A: rising=28903447, falling=28903435   B: rising=28901093, falling=28901113
+CPU load = 1.7%
+A: rising=28903498, falling=28903486   B: rising=28901143, falling=28901164
+CPU load = 1.7%
+A: rising=28903549, falling=28903537   B: rising=28901194, falling=28901215
+CPU load = 1.7%
+A: rising=28903600, falling=28903587   B: rising=28901245, falling=28901266
+CPU load = 1.7%
+A: rising=28903651, falling=28903638   B: rising=28901296, falling=28901316
+CPU load = 1.7%
+A: rising=28903701, falling=28903689   B: rising=28901347, falling=28901367
+CPU load = 1.7%
+A: rising=28903752, falling=28903740   B: rising=28901398, falling=28901418
+CPU load = 1.7%
+A: rising=28903803, falling=28903791   B: rising=28901448, falling=28901469
+CPU load = 1.7%
+
+Terminating...
+Thanks for using picocom

@@ -1,0 +1,413 @@
+picocom v3.1
+
+port is        : /dev/ttyACM0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : delbs,
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
+
+Type [C-a] [C-h] to see available commands
+Terminal ready
+ÝA`!FR‰pÕAà!FÑ‰pQ­3Q' pY53Q dQ¡3Q	œfQ¹3Q'LüpQ­3!A: rising=33902045, falling=33902033   B: rising=33329341, falling=33329361
+CPU load = 1.5%
+A: rising=33902045, falling=33902033   B: rising=33329341, falling=33329361
+CPU load = 1.5%
+A: rising=33905284, falling=33905272   B: rising=33332580, falling=33332600
+CPU load = 13.1%
+*** Booting Zephyr OS build v4.3.0 ***
+Pulse counter started
+A: rising=49, falling=50   B: rising=49, falling=50
+CPU load = 100.0%
+*** Booting Zephyr OS build v4.3.0 ***
+Pulse counter started
+A: rising=50, falling=49   B: rising=49, falling=50
+CPU load = 100.0%
+A: rising=12709, falling=12708   B: rising=12708, falling=12708
+CPU load = 46.1%
+A: rising=25386, falling=25386   B: rising=25386, falling=25386
+CPU load = 46.1%
+A: rising=38064, falling=38063   B: rising=38063, falling=38064
+CPU load = 46.1%
+A: rising=50742, falling=50741   B: rising=50741, falling=50741
+CPU load = 46.1%
+A: rising=63419, falling=63419   B: rising=63418, falling=63419
+CPU load = 46.1%
+A: rising=76097, falling=76096   B: rising=76096, falling=76097
+CPU load = 46.1%
+A: rising=88774, falling=88774   B: rising=88774, falling=88774
+CPU load = 46.1%
+A: rising=101452, falling=101452   B: rising=101451, falling=101452
+CPU load = 46.2%
+A: rising=114140, falling=114139   B: rising=114139, falling=114139
+CPU load = 46.2%
+A: rising=126827, falling=126827   B: rising=126827, falling=126827
+CPU load = 46.2%
+A: rising=139515, falling=139514   B: rising=139514, falling=139515
+CPU load = 46.2%
+A: rising=152203, falling=152202   B: rising=152202, falling=152202
+CPU load = 46.2%
+A: rising=164890, falling=164890   B: rising=164889, falling=164890
+CPU load = 46.2%
+A: rising=177578, falling=177577   B: rising=177577, falling=177578
+CPU load = 46.2%
+A: rising=190265, falling=190265   B: rising=190265, falling=190265
+CPU load = 46.2%
+A: rising=202953, falling=202953   B: rising=202952, falling=202953
+CPU load = 46.2%
+A: rising=215641, falling=215640   B: rising=215640, falling=215640
+CPU load = 46.2%
+A: rising=228328, falling=228328   B: rising=228328, falling=228328
+CPU load = 46.2%
+A: rising=241016, falling=241016   B: rising=241015, falling=241016
+CPU load = 46.2%
+A: rising=253704, falling=253703   B: rising=253703, falling=253703
+CPU load = 46.2%
+A: rising=266391, falling=266391   B: rising=266391, falling=266391
+CPU load = 46.2%
+A: rising=279079, falling=279078   B: rising=279078, falling=279079
+CPU load = 46.2%
+A: rising=291767, falling=291766   B: rising=291766, falling=291766
+CPU load = 46.2%
+A: rising=304454, falling=304454   B: rising=304453, falling=304454
+CPU load = 46.2%
+A: rising=317142, falling=317141   B: rising=317141, falling=317142
+CPU load = 46.2%
+A: rising=329829, falling=329829   B: rising=329829, falling=329829
+CPU load = 46.2%
+A: rising=342517, falling=342517   B: rising=342516, falling=342517
+CPU load = 46.2%
+A: rising=355205, falling=355204   B: rising=355204, falling=355204
+CPU load = 46.2%
+A: rising=367892, falling=367892   B: rising=367892, falling=367892
+CPU load = 46.2%
+A: rising=380580, falling=380579   B: rising=380579, falling=380580
+CPU load = 46.2%
+A: rising=393268, falling=393267   B: rising=393267, falling=393267
+CPU load = 46.2%
+A: rising=405955, falling=405955   B: rising=405955, falling=405955
+CPU load = 46.2%
+A: rising=418643, falling=418642   B: rising=418642, falling=418643
+CPU load = 46.2%
+A: rising=431331, falling=431330   B: rising=431330, falling=431330
+CPU load = 46.2%
+A: rising=444018, falling=444018   B: rising=444017, falling=444018
+CPU load = 46.2%
+A: rising=456706, falling=456705   B: rising=456705, falling=456706
+CPU load = 46.2%
+A: rising=469393, falling=469393   B: rising=469393, falling=469393
+CPU load = 46.2%
+A: rising=482081, falling=482081   B: rising=482080, falling=482081
+CPU load = 46.2%
+A: rising=494769, falling=494768   B: rising=494768, falling=494768
+CPU load = 46.2%
+A: rising=507456, falling=507456   B: rising=507456, falling=507456
+CPU load = 46.2%
+A: rising=520144, falling=520143   B: rising=520143, falling=520144
+CPU load = 46.2%
+A: rising=532832, falling=532831   B: rising=532831, falling=532831
+CPU load = 46.2%
+A: rising=545519, falling=545519   B: rising=545518, falling=545519
+CPU load = 46.2%
+A: rising=558207, falling=558206   B: rising=558206, falling=558207
+CPU load = 46.2%
+A: rising=570894, falling=570894   B: rising=570894, falling=570894
+CPU load = 46.2%
+A: rising=583582, falling=583582   B: rising=583581, falling=583582
+CPU load = 46.2%
+A: rising=596270, falling=596269   B: rising=596269, falling=596270
+CPU load = 46.2%
+A: rising=608957, falling=608957   B: rising=608957, falling=608957
+CPU load = 46.2%
+A: rising=621645, falling=621645   B: rising=621644, falling=621645
+CPU load = 46.2%
+A: rising=634333, falling=634332   B: rising=634332, falling=634332
+CPU load = 46.2%
+A: rising=647020, falling=647020   B: rising=647020, falling=647020
+CPU load = 46.2%
+A: rising=659708, falling=659707   B: rising=659707, falling=659708
+CPU load = 46.2%
+A: rising=672396, falling=672395   B: rising=672395, falling=672395
+CPU load = 46.2%
+A: rising=685083, falling=685083   B: rising=685082, falling=685083
+CPU load = 46.2%
+A: rising=697771, falling=697770   B: rising=697770, falling=697771
+CPU load = 46.2%
+A: rising=710458, falling=710458   B: rising=710458, falling=710458
+CPU load = 46.2%
+A: rising=723146, falling=723146   B: rising=723145, falling=723146
+CPU load = 46.2%
+A: rising=735834, falling=735833   B: rising=735833, falling=735833
+CPU load = 46.2%
+A: rising=748521, falling=748521   B: rising=748521, falling=748521
+CPU load = 46.2%
+A: rising=761209, falling=761208   B: rising=761208, falling=761209
+CPU load = 46.2%
+A: rising=773897, falling=773896   B: rising=773896, falling=773896
+CPU load = 46.2%
+A: rising=786584, falling=786584   B: rising=786583, falling=786584
+CPU load = 46.2%
+A: rising=799272, falling=799271   B: rising=799271, falling=799272
+CPU load = 46.2%
+A: rising=811960, falling=811959   B: rising=811959, falling=811959
+CPU load = 46.2%
+A: rising=824647, falling=824647   B: rising=824646, falling=824647
+CPU load = 46.2%
+A: rising=837335, falling=837334   B: rising=837334, falling=837335
+CPU load = 46.2%
+A: rising=850022, falling=850022   B: rising=850022, falling=850022
+CPU load = 46.2%
+A: rising=862710, falling=862710   B: rising=862709, falling=862710
+CPU load = 46.2%
+A: rising=875398, falling=875397   B: rising=875397, falling=875397
+CPU load = 46.2%
+A: rising=888085, falling=888085   B: rising=888085, falling=888085
+CPU load = 46.2%
+A: rising=900773, falling=900772   B: rising=900772, falling=900773
+CPU load = 46.2%
+A: rising=913461, falling=913460   B: rising=913460, falling=913460
+CPU load = 46.2%
+A: rising=926148, falling=926148   B: rising=926147, falling=926148
+CPU load = 46.2%
+A: rising=938836, falling=938835   B: rising=938835, falling=938836
+CPU load = 46.2%
+A: rising=951523, falling=951523   B: rising=951523, falling=951523
+CPU load = 46.2%
+A: rising=964211, falling=964211   B: rising=964210, falling=964211
+CPU load = 46.2%
+A: rising=976899, falling=976898   B: rising=976898, falling=976898
+CPU load = 46.2%
+A: rising=986498, falling=986498   B: rising=986498, falling=986498
+CPU load = 35.1%
+A: rising=986498, falling=986498   B: rising=986498, falling=986498
+CPU load = 1.4%
+A: rising=986498, falling=986498   B: rising=986498, falling=986498
+CPU load = 1.4%
+A: rising=986498, falling=986498   B: rising=986498, falling=986498
+CPU load = 1.4%
+A: rising=986498, falling=986498   B: rising=986498, falling=986498
+CPU load = 1.4%
+*** Booting Zephyr OS build v4.3.0 ***
+Pulse counter started
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 100.0%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=0, falling=0   B: rising=0, falling=0
+CPU load = 1.1%
+A: rising=8850, falling=8850   B: rising=8850, falling=8850
+CPU load = 33.0%
+A: rising=21520, falling=21520   B: rising=21520, falling=21520
+CPU load = 46.1%
+A: rising=34198, falling=34198   B: rising=34197, falling=34198
+CPU load = 46.1%
+A: rising=46876, falling=46875   B: rising=46875, falling=46875
+CPU load = 46.1%
+A: rising=59553, falling=59553   B: rising=59553, falling=59553
+CPU load = 46.1%
+A: rising=72231, falling=72230   B: rising=72230, falling=72231
+CPU load = 46.1%
+A: rising=84909, falling=84908   B: rising=84908, falling=84908
+CPU load = 46.1%
+A: rising=97586, falling=97586   B: rising=97585, falling=97586
+CPU load = 46.1%
+A: rising=110264, falling=110263   B: rising=110263, falling=110264
+CPU load = 46.2%
+A: rising=122952, falling=122951   B: rising=122951, falling=122951
+CPU load = 46.2%
+A: rising=135639, falling=135639   B: rising=135638, falling=135639
+CPU load = 46.2%
+A: rising=148327, falling=148326   B: rising=148326, falling=148327
+CPU load = 46.2%
+A: rising=161014, falling=161014   B: rising=161014, falling=161014
+CPU load = 46.2%
+A: rising=173702, falling=173702   B: rising=173701, falling=173702
+CPU load = 46.2%
+A: rising=186390, falling=186389   B: rising=186389, falling=186389
+CPU load = 46.2%
+A: rising=199077, falling=199077   B: rising=199077, falling=199077
+CPU load = 46.2%
+A: rising=211765, falling=211764   B: rising=211764, falling=211765
+CPU load = 46.2%
+A: rising=224453, falling=224452   B: rising=224452, falling=224452
+CPU load = 46.2%
+A: rising=237140, falling=237140   B: rising=237139, falling=237140
+CPU load = 46.2%
+A: rising=249828, falling=249827   B: rising=249827, falling=249828
+CPU load = 46.2%
+A: rising=262515, falling=262515   B: rising=262515, falling=262515
+CPU load = 46.2%
+A: rising=275203, falling=275203   B: rising=275202, falling=275203
+CPU load = 46.2%
+A: rising=287891, falling=287890   B: rising=287890, falling=287891
+CPU load = 46.2%
+A: rising=300578, falling=300578   B: rising=300578, falling=300578
+CPU load = 46.2%
+A: rising=313266, falling=313266   B: rising=313265, falling=313266
+CPU load = 46.2%
+A: rising=325954, falling=325953   B: rising=325953, falling=325953
+CPU load = 46.2%
+A: rising=338641, falling=338641   B: rising=338641, falling=338641
+CPU load = 46.2%
+A: rising=351329, falling=351328   B: rising=351328, falling=351329
+CPU load = 46.2%
+A: rising=364017, falling=364016   B: rising=364016, falling=364016
+CPU load = 46.2%
+A: rising=376704, falling=376704   B: rising=376703, falling=376704
+CPU load = 46.2%
+A: rising=389392, falling=389391   B: rising=389391, falling=389392
+CPU load = 46.2%
+A: rising=402079, falling=402079   B: rising=402079, falling=402079
+CPU load = 46.2%
+A: rising=414767, falling=414767   B: rising=414766, falling=414767
+CPU load = 46.2%
+A: rising=427455, falling=427454   B: rising=427454, falling=427454
+CPU load = 46.2%
+A: rising=440142, falling=440142   B: rising=440142, falling=440142
+CPU load = 46.2%
+A: rising=452830, falling=452829   B: rising=452829, falling=452830
+CPU load = 46.2%
+A: rising=465518, falling=465517   B: rising=465517, falling=465517
+CPU load = 46.2%
+A: rising=478205, falling=478205   B: rising=478204, falling=478205
+CPU load = 46.2%
+A: rising=490893, falling=490892   B: rising=490892, falling=490893
+CPU load = 46.2%
+A: rising=503581, falling=503580   B: rising=503580, falling=503580
+CPU load = 46.2%
+A: rising=516268, falling=516268   B: rising=516267, falling=516268
+CPU load = 46.2%
+A: rising=528956, falling=528955   B: rising=528955, falling=528956
+CPU load = 46.2%
+A: rising=541643, falling=541643   B: rising=541643, falling=541643
+CPU load = 46.2%
+A: rising=554331, falling=554331   B: rising=554330, falling=554331
+CPU load = 46.2%
+A: rising=567019, falling=567018   B: rising=567018, falling=567018
+CPU load = 46.2%
+A: rising=579706, falling=579706   B: rising=579706, falling=579706
+CPU load = 46.2%
+A: rising=592394, falling=592393   B: rising=592393, falling=592394
+CPU load = 46.2%
+A: rising=605082, falling=605081   B: rising=605081, falling=605081
+CPU load = 46.2%
+A: rising=617769, falling=617769   B: rising=617768, falling=617769
+CPU load = 46.2%
+A: rising=630457, falling=630456   B: rising=630456, falling=630457
+CPU load = 46.2%
+A: rising=643144, falling=643144   B: rising=643144, falling=643144
+CPU load = 46.2%
+A: rising=655832, falling=655832   B: rising=655831, falling=655832
+CPU load = 46.2%
+A: rising=668520, falling=668519   B: rising=668519, falling=668519
+CPU load = 46.2%
+A: rising=681207, falling=681207   B: rising=681207, falling=681207
+CPU load = 46.2%
+A: rising=693895, falling=693894   B: rising=693894, falling=693895
+CPU load = 46.2%
+A: rising=706583, falling=706582   B: rising=706582, falling=706582
+CPU load = 46.2%
+A: rising=719270, falling=719270   B: rising=719269, falling=719270
+CPU load = 46.2%
+A: rising=731958, falling=731957   B: rising=731957, falling=731958
+CPU load = 46.2%
+A: rising=744645, falling=744645   B: rising=744645, falling=744645
+CPU load = 46.2%
+A: rising=757333, falling=757333   B: rising=757332, falling=757333
+CPU load = 46.2%
+A: rising=770021, falling=770020   B: rising=770020, falling=770021
+CPU load = 46.2%
+A: rising=782708, falling=782708   B: rising=782708, falling=782708
+CPU load = 46.2%
+A: rising=795396, falling=795396   B: rising=795395, falling=795396
+CPU load = 46.2%
+A: rising=808084, falling=808083   B: rising=808083, falling=808083
+CPU load = 46.2%
+A: rising=820771, falling=820771   B: rising=820771, falling=820771
+CPU load = 46.2%
+A: rising=833459, falling=833458   B: rising=833458, falling=833459
+CPU load = 46.2%
+A: rising=846147, falling=846146   B: rising=846146, falling=846146
+CPU load = 46.2%
+A: rising=858834, falling=858834   B: rising=858833, falling=858834
+CPU load = 46.2%
+A: rising=871522, falling=871521   B: rising=871521, falling=871522
+CPU load = 46.2%
+A: rising=884209, falling=884209   B: rising=884209, falling=884209
+CPU load = 46.2%
+A: rising=896897, falling=896897   B: rising=896896, falling=896897
+CPU load = 46.2%
+A: rising=909585, falling=909584   B: rising=909584, falling=909584
+CPU load = 46.2%
+A: rising=922272, falling=922272   B: rising=922272, falling=922272
+CPU load = 46.2%
+A: rising=934960, falling=934960   B: rising=934959, falling=934960
+CPU load = 46.2%
+A: rising=947648, falling=947647   B: rising=947647, falling=947647
+CPU load = 46.2%
+A: rising=960335, falling=960335   B: rising=960335, falling=960335
+CPU load = 46.2%
+A: rising=973023, falling=973022   B: rising=973022, falling=973023
+CPU load = 46.2%
+A: rising=985711, falling=985710   B: rising=985710, falling=985710
+CPU load = 46.2%
+A: rising=998398, falling=998398   B: rising=998397, falling=998398
+CPU load = 46.2%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 6.6%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+A: rising=1000000, falling=1000000   B: rising=1000000, falling=1000000
+CPU load = 1.5%
+
+Terminating...
+Thanks for using picocom

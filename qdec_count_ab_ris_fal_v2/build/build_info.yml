@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/samples/sensor/qdec_count_ab_ris_fal'
+    source-dir: '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/samples/sensor/qdec_count_ab_ris_fal'
+  board:
+    name: 'nucleo_f410rb'
+    path:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/boards/st/nucleo_f410rb'
+    qualifiers: 'stm32f410rx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/boards/st/nucleo_f410rb/nucleo_f410rb.dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/samples/sensor/qdec_count_ab_ris_fal/boards/nucleo_f410rb.overlay'
+    include-dirs:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/atmel/include'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/microchip/include'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/microchip/dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/nxp/dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/stm32/dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/modules/hal/ti/dts'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/include'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/include/zephyr'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/common'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/vendor'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/rx'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/x86'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/xtensa'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/sparc'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/riscv'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/posix'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/arm64'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/arm'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts/arc'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/samples/sensor/qdec_count_ab_ris_fal/boards/nucleo_f410rb.overlay'
+  kconfig:
+    files:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/boards/st/nucleo_f410rb/nucleo_f410rb_defconfig'
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/samples/sensor/qdec_count_ab_ris_fal/prj.conf'
+    user-files:
+     - '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr/samples/sensor/qdec_count_ab_ris_fal/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/lucassorion/zephyr-sdk-0.17.0'
+  zephyr:
+    version: '4.3.0'
+    zephyr-base: '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/lucassorion/workspace/.venv/bin/west build -b nucleo_f410rb -o=-j12 -p -- -DBUILD_TYPE=debug'
+  topdir: '/home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject'
+  version: '1.2.0'
