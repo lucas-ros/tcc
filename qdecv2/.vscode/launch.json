@@ -1,0 +1,82 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "J-Link - Debug",
+            "device": "stm32h753zi",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "jlink",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 20
+            },
+            "preLaunchTask": "west_build_debug",
+            // "preLaunchCommands":[
+            //     "monitor speed 30000"
+            // 
+        },
+        {
+            "name": "J-Link - Attach",
+            "device": "stm32h753zi",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "jlink",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 20
+            },
+            // "preLaunchTask": "west_build_debug",
+            // "preLaunchCommands":[
+            //     "monitor speed 30000"
+            // 
+        },
+        {
+            "name": "ST-Link - Debug",
+            "device": "nucleo_f410rb",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "stlink",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "preLaunchTask": "west_build_debug",
+        },
+        {
+            "name": "ST-Link - Debug_old",
+            "device": "stm32h753zi",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "stlink",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "preLaunchTask": "west_build_debug_old",
+        }
+        // {
+        //     "type": "cortex-debug",
+        //     "request": "launch",
+        //     "servertype": "openocd",
+        //     "cwd": "${workspaceFolder}",
+        //     "executable": "build/zephyr/zephyr.elf",
+        //     "name": "zephyr nucleo_h753zi",
+        //     "device": "nucleo_h753zi",
+        //     "configFiles": [
+        //         "${ZEPHYR_BASE}/boards/arm/nucleo_h753zi/support/openocd.cfg" ]
+        // }
+    ]
+}
