@@ -1,4 +1,0 @@
-west:
-  command: /home/lucassorion/workspace/.venv/bin/west build -p -b nucleo_f410rb
-  topdir: /home/lucassorion/workspace/orion_dispenser/thirdparty/zephyrproject
-  version: 1.2.0
