@@ -1,0 +1,6 @@
+---- LATÊNCIA / JITTER ----
+Transições: 20000
+Latência média : 52.601144 us
+Jitter (std)   : 9.727072 us
+Latência mínima: 0.000000 us
+Latência máxima: 355.680000 us

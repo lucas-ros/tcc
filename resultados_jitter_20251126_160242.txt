@@ -1,0 +1,4 @@
+---- LATÊNCIA / JITTER ----
+Transições: 2000000
+Latência média : 3.816430 us
+Jitter (std)   : 0.160169 us

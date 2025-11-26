@@ -1,0 +1,8 @@
+---- LATÊNCIA / JITTER (baseado em bordas) ----
+
+Total de bordas pareadas (após trimming 5%): 18000
+
+Latência média : 552.086969 us
+Jitter (std)   : 499.382637 us
+Latência mínima: 49.600000 us
+Latência máxima: 1054.560000 us
