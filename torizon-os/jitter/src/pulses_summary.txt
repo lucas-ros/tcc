@@ -1,0 +1,11 @@
+Resultados finais da contagem de bordas:
+
+Canal A (SODIMM_135):
+  Rising edges : 27990
+  Falling edges: 28154
+  Total        : 56144
+
+Canal B (SODIMM_133):
+  Rising edges : 28044
+  Falling edges: 28100
+  Total        : 56144

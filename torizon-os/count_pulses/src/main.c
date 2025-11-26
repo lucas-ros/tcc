@@ -6,32 +6,32 @@
 #include <time.h>
 
 int main(int argc, char *argv[]) {
-    const char* gpiolineName = "SODIMM_135";
-    const char* gpioChip = "/dev/gpiochip1";
+    const char* gpiolineName_A = "SODIMM_135";
+    const char* gpioChip_A = "/dev/gpiochip1";
 
     int is_running = 1;
 
-    struct gpiod_line* gpioline = gpiod_line_find(gpiolineName);
-    if (!gpioline) {
-        fprintf(stderr, "Failed to find GPIO line: %s\n", gpiolineName);
+    struct gpiod_line* gpioline_A = gpiod_line_find(gpiolineName_A);
+    if (!gpioline_A) {
+        fprintf(stderr, "Failed to find GPIO line: %s\n", gpiolineName_A);
         return 1;
     }
 
-    struct gpiod_chip* chip = gpiod_line_get_chip(gpioline);
-    if (!chip) {
-        fprintf(stderr, "Failed to get GPIO chip for line: %s\n", gpiolineName);
-        gpiod_line_release(gpioline);
+    struct gpiod_chip* chip_A = gpiod_line_get_chip(gpioline_A);
+    if (!chip_A) {
+        fprintf(stderr, "Failed to get GPIO chip_A for line: %s\n", gpiolineName_A);
+        gpiod_line_release(gpioline_A);
         return 1;
     }
 
     // ⭐ BOTH EDGES
-    if (gpiod_line_request_both_edges_events(gpioline, "pulse-counter") < 0) {
+    if (gpiod_line_request_both_edges_events(gpioline_A, "pulse-counter") < 0) {
         fprintf(stderr, "Failed to request both-edge events\n");
-        gpiod_chip_close(chip);
+        gpiod_chip_close(chip_A);
         return 1;
     }
 
-    printf("Listening for pulses (rising + falling) on %s...\n", gpiolineName);
+    printf("Listening for pulses (rising + falling) on %s...\n", gpiolineName_A);
 
     FILE *log = fopen("linux_pulses.csv", "w");
     if (!log) {
@@ -52,12 +52,12 @@ int main(int argc, char *argv[]) {
 
     while (is_running) {
         struct gpiod_line_event event;
-        int ret = gpiod_line_event_wait(gpioline, &timeout);
+        int ret = gpiod_line_event_wait(gpioline_A, &timeout);
         if (ret <= 0) {
             break;
         }
 
-        if (gpiod_line_event_read(gpioline, &event) == 0) {
+        if (gpiod_line_event_read(gpioline_A, &event) == 0) {
 
             clock_gettime(CLOCK_MONOTONIC, &ts);
 
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
 
     printf("Total events counted: %lu\n", both_count);
     fclose(log);
-    gpiod_line_release(gpioline);
-    gpiod_chip_close(chip);
+    gpiod_line_release(gpioline_A);
+    gpiod_chip_close(chip_A);
     return 0;
 }
