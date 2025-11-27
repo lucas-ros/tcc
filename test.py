@@ -68,7 +68,7 @@ def create_output_filename():
 # Main
 # ---------------------------------------------------------
 def main():
-    times, ch0, ch2 = load_csv("digital.csv")
+    times, ch0, ch2 = load_csv("logic_data/digital.csv")
     lat, jit, diffs, transitions = compute_latency_and_jitter(times, ch0, ch2)
 
     filename = create_output_filename()
